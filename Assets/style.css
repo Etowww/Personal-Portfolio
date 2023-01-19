@@ -5,45 +5,58 @@
     box-sizing: border-box;
 }
 
+html {
+    max-width: 100vw;
+}
+
 body {
     background-color: #60463B;
+    max-width: 100vw;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header / Navigation Styling Section */
-nav {
-    width: 100%;
-    overflow: hidden;
-    border-bottom: 4px solid #8CFF98
-}
 
 .nav-bar h1 {
     font-size: 40px;
     color: #C4BBB8;
 }
 
-.nav-bar a {
-    color: #8CFF98;
+nav {
+    width: 100%;
 }
 
-.nav-bar ul {
+
+nav ul {
     display: flex;
     justify-content: flex-end;
 }
 
-.nav-bar li {
+nav ul li {
     margin: 1.5%
+}
+
+nav ul li a {
+    color: #8CFF98;
 }
 
 /* Hero Image section */
 
 .Hero {
+    display: flex;
     position: relative;
-    background-image: url(palate.png);
+    background-image: url(./Images/palate.png);
     background-size: cover;
     background-position: 100%;
     height: 300px;
     width: 100%;
+    border-top: 4px solid #8CFF98;
     border-bottom: 4px solid #8CFF98;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .HeroContent {
@@ -51,67 +64,84 @@ nav {
 }
 
 .Hero h2 {
-    display: flex;
-    font-size: 20px;
+    font-size: 16px;
     background-color: black;
     color: white;
+    max-width: 40%;
+    padding: 15px;
+    margin: 0 20px 20px 0;
+    line-height: 1.5;
 }
 
 /* About Me Section */
 
-.AboutMe {
+.section {
     display: flex;
-    position: relative;
     margin-top: 5%;
-
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
-.AboutMe h2 {
-    margin-left: 10%;
-    padding-right: 2%;
+.section h2 {
     border-right: 4px solid #8CFF98;
     font-size: 35px;
     color: #C4BBB8;
+    flex: 0 0 25%;
+    text-align: right;
+    padding-right: 5px;
 }
 
-.AboutMeContent {
+.content {
     display: flex;
     flex-direction: column;
+    flex: 0 0 75%;
+    flex-wrap: wrap;
 }
 
-.AboutMe h3 {
+.content h3 {
     display: flex;
     justify-content: center;
-    color:#8CFF98;
+    color: #8CFF98;
     font-size: 20px;
     padding: 2%;
 }
 
-.AboutMe p {
+.content p {
     padding-left: 20px;
-    color:#C4BBB8;
+    color: #C4BBB8;
 }
+
 
 
 
 /* Work Section */
-.Work {
+.projects {
+    justify-content: center;
+}
+
+.projects a {
+    color: #8CFF98
+}
+
+.project {
+    min-height: 200px;
+    max-height: 200px;
     display: flex;
-    position: relative;
-    margin-top: 5%;
-    padding: 10px;
+    background-size: 100%;
+    padding-bottom: 20px;
+    margin: 20px;
 }
 
-
-.Work h2 {
-    margin-left: 10%;
-    padding-right: 1%;
-    border-right: 4px solid #8CFF98;
-    font-size: 35px;
-    color: #C4BBB8;
+.project-1 h4 {
+    color: #8CFF98;
+    background-color: #60463B;
+    padding: 2%;
+    border-radius: 25px;
 }
-
-.WorkContent figure {
+/* 
+.content a figure {
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-style: solid;
     border-width: 4px;
@@ -126,18 +156,17 @@ nav {
     border-color:#8CFF98;
     border-radius: 10px;
     height: 100px;
-}
-
-.WorkContent a {
-    color:#8CFF98
-}
+} */
 
 .project-1 {
-    background-image: url(https://picsum.photos/800/600);
+    background-image: url(./Images/project1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 300px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-2 {
@@ -145,7 +174,6 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30px;
 }
 
 .project-3 {
@@ -153,29 +181,8 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30px;
 }
+
 
 /* Contact Me Section */
-.ContactMe {
-    display: flex;
-    position: relative;
-    margin-top: 5%;
-}
 
-.ContactMe h2 {
-    margin-left: 1%;
-    padding-right: 1%;
-    border-right: 4px solid #8CFF98;
-    font-size: 35px;
-    color: #C4BBB8;
-}
-
-.ContactMe ul {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.ContactMe li {
-    margin: 1.5%;
-}
