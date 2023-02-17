@@ -48,7 +48,7 @@ nav ul li a {
 .Hero {
     display: flex;
     position: relative;
-    background-image: url(./Images/palate.png);
+    background-image: url(./Assets/Images/palate.png);
     background-size: cover;
     background-position: 100%;
     height: 300px;
@@ -140,6 +140,13 @@ nav ul li a {
     padding: 2%;
     border-radius: 25px;
 }
+
+.project-2 h4 {
+    color: #8CFF98;
+    background-color: #60463B;
+    padding: 2%;
+    border-radius: 25px;
+}
 /* 
 .content a figure {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -159,7 +166,7 @@ nav ul li a {
 } */
 
 .project-1 {
-    background-image: url(./Images/project1.png);
+    background-image: url(./Assets/Images/project1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -170,10 +177,14 @@ nav ul li a {
 }
 
 .project-2 {
-    background-image: url(https://picsum.photos/800/600);
+    background-image: url(./Assets/Images/OffnOn.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-3 {
