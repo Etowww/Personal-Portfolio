@@ -147,6 +147,13 @@ nav ul li a {
     padding: 2%;
     border-radius: 25px;
 }
+
+.project-3 h4 {
+    color: #8CFF98;
+    background-color: #60463B;
+    padding: 2%;
+    border-radius: 25px;
+}
 /* 
 .content a figure {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -188,10 +195,14 @@ nav ul li a {
 }
 
 .project-3 {
-    background-image: url(https://picsum.photos/800/600);
+    background-image: url(./Assets/Images/musicJunkeez.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
